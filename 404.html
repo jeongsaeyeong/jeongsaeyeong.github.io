@@ -1,34 +1,21 @@
 ---
-title: Page Not Found
+layout: home-page
+permalink: /404.html
+title: Sorry 
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	{%- include head.html -%}
-	<style>
-	h2 {
-		font-feature-settings: "lnum";
-		background-color: #ddd;
-		width: 140px;
-		height: 140px;
-		border-radius: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center
-	}
-	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		font-size: 20px;
-		height: 80vh;
-	}
-	p {text-align: center; line-height: 2em;}
-	</style>
-</head>
-<body>
-	<h2>404</h2>
-	<p>Page not found.</p>
-</body>
-</html>
+{% include calculate_relative_base.html %}
+{% include escape-404.html %}
+<a href="{{ relativebase }}">
+    <picture>
+      <source srcset="{{ relativebase }}assets/img/404_small.jpg" media="(max-width: 768px)">
+      <source srcset="{{ relativebase }}assets/img/404.jpg">
+      <img src="{{ relativebase }}assets/img/404.jpg" alt="Page not found" class="pnf-image" style="width:100vw;max-width:unset;margin-left:calc((100% - 100vw)/2);margin-top:-16.5px;">
+    </picture>
+</a>
+{% include recent-post.html %}
+<form class="search-form inline">
+    <div id="search-container">
+        <input type="text" id="search-input" class="search" placeholder="Search">
+    </div>
+</form>
+<ul id="results-container" class="results-search"></ul>
