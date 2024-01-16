@@ -36,9 +36,8 @@ layout: default
         {% include sidebar.html context="post" class="inline" id="post-end" %}
         <div class="separator"></div>
         {% include author-box.html %}
-        <script src="https://utteranc.es/client.js" repo="jeongsaeyeong/jeongsaeyeong.github.io" issue-term="pathname"
-          label="comment" theme="github-light" crossorigin="anonymous" async>
-          </script>
+        {% include recent-post.html %}
+        {% include comments.html %}
       </div>
     </div> <!-- End Wrapper -->
   </article>
