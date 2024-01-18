@@ -1,6 +1,64 @@
-@import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-weight: 300;
+	font-style: normal;
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot');
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot?#iefix') format('embedded-opentype'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff2') format('woff2'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff') format('woff'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.ttf') format("truetype");
+	font-display: swap;
+}
 
-body{
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-weight: 400;
+	font-style: normal;
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot');
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot?#iefix') format('embedded-opentype'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff2') format('woff2'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff') format('woff'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.ttf') format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-weight: 700;
+	font-style: normal;
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot');
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot?#iefix') format('embedded-opentype'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff2') format('woff2'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff') format('woff'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.ttf') format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-weight: 800;
+	font-style: normal;
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot');
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot?#iefix') format('embedded-opentype'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff2') format('woff2'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff') format('woff'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.ttf') format("truetype");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'NanumSquareNeo';
+	font-weight: 900;
+	font-style: normal;
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot');
+	src: url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot?#iefix') format('embedded-opentype'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff2') format('woff2'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff') format('woff'),
+		url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.ttf') format("truetype");
+	font-display: swap;
+}
+
+body {
 	color: #2c3e50;
 }
 
@@ -16,12 +74,13 @@ body{
 	text-align: center;
 	margin-bottom: 10px;
 }
-.sidebar-header .title{
+
+.sidebar-header .title {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
 
-.sidebar-header .title a{
+.sidebar-header .title a {
 	text-decoration: none;
 	color: #fff;
 }
@@ -31,13 +90,17 @@ a.nav-link {
 	padding-top: 7px;
 	color: #aaa;
 }
-a.nav-link i{
+
+a.nav-link i {
 	font-size: 16px;
 }
-a.nav-link:hover { color: #777; }
+
+a.nav-link:hover {
+	color: #777;
+}
 
 #bio {
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'NanumSquareNeo';
 	font-size: 11px;
 	margin: 0 auto;
 	margin-bottom: 10px;
@@ -45,33 +108,40 @@ a.nav-link:hover { color: #777; }
 
 #contact-list li .fa,
 article .share .btn {
-	-o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;
+	-o-transition: color .2s ease-out, background 1s ease-in;
+	-ms-transition: color .2s ease-out, background 1s ease-in;
+	-moz-transition: color .2s ease-out, background 1s ease-in;
+	-webkit-transition: color .2s ease-out, background 1s ease-in;
+	transition: color .2s ease-out, background 1s ease-in;
 }
+
 #contact-list li:hover .fa-twitter,
 article .share .twitter:hover {
 	color: #00ACEE;
 	border-color: #00ACEE;
 }
+
 #contact-list li:hover .fa-linkedin {
 	color: #1D87BD;
 }
+
 #contact-list li:hover .fa-envelope {
 	color: #E93E30;
 }
+
 #contact-list li:hover .fa-pinterest {
 	color: #CC2127;
 }
+
 #contact-list li:hover .fa-rss {
 	color: #e74c3c;
 }
+
 article .share .facebook:hover {
 	color: #43609C;
 	border-color: #43609C;
 }
+
 article .share .gplus:hover {
 	color: #C13929;
 	border-color: #C13929;
@@ -87,16 +157,16 @@ article .share .gplus:hover {
 }
 
 @media only screen and (min-width: 768px) {
-    .page-header{
-        margin-right: 70px;
-    }
+	.page-header {
+		margin-right: 70px;
+	}
 }
 
-article{
+article {
 	margin-bottom: 40px;
 }
 
-.article_body{
+.article_body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -111,27 +181,48 @@ article {
 	padding: 0 5% 0;
 }
 
-article.home div a, article.home pre a { color: #2c3e50; }
-article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
-article img { max-width: 100%; }
+article.home div a,
+article.home pre a {
+	color: #2c3e50;
+}
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
+article.home div a:hover,
+article.home pre a:hover {
+	color: #2c3e50;
+	text-decoration: none;
+}
+
+article img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'NanumSquareNeo';
+}
+
 article.home h1,
 article.home h2,
 article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Ubuntu', sans-serif;
-	color: #f2756a;
+	font-family: 'NanumSquareNeo';
+	color: #5b8fff;
 }
 
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
 article.home h4 a {
-	color: #f2756a;
+	font-weight: 400;
+	color: #5b8fff;
 }
+
 article.home h1 a:hover,
 article.home h2 a:hover,
 article.home h3 a:hover,
@@ -140,52 +231,69 @@ article.home h4 a:hover {
 }
 
 .author .author-image {
-  float: left;
-  margin-right: 20px;
+	float: left;
+	margin-right: 20px;
 }
 
 footer {
 	padding-top: 15px;
-	font-family: 'Ubuntu';
+	font-family: 'NanumSquareNeo';
 }
 
 /* nav-vertical-tabs component */
 .nav-tabs-vertical {
-    border-right: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 }
 
 .nav-tabs-vertical li {
-    margin-right: -1px;
+	margin-right: -1px;
 }
 
-.nav-tabs-vertical>li.active>a, .nav-tabs-vertical>li.active>a:hover, .nav-tabs-vertical>li.active>a:focus {
-    color: #555;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-right-color: transparent;
+.nav-tabs-vertical>li.active>a,
+.nav-tabs-vertical>li.active>a:hover,
+.nav-tabs-vertical>li.active>a:focus {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-right-color: transparent;
 }
 
 .nav-tabs-vertical>li>a {
-    line-height: 1.428571429;
-    border: 1px solid transparent;
-    border-radius: 4px 0 0 4px;
+	line-height: 1.428571429;
+	border: 1px solid transparent;
+	border-radius: 4px 0 0 4px;
 }
 
-.badge { background: #F2756A; }
-
-#nav-menu{
-    position: fixed;
-    top: 45px;
-    right: 45px;
-    z-index: 2000;
+.badge {
+	background: #5b8fff;
 }
+
+#nav-menu {
+	position: fixed;
+	top: 45px;
+	right: 45px;
+	z-index: 2000;
+}
+
 #nav-menu .dropdown-menu {
-    left: inherit;
-    right: 0px;
+	left: inherit;
+	right: 0px;
 }
 
 ul.dropdown-menu>li>a>i.fa {
-    width: 1.3em;
+	width: 1.3em;
 }
 
+body,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'NanumSquareNeo';
+	color: #000;
+}
